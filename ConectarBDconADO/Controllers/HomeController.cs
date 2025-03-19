@@ -41,10 +41,11 @@ namespace ConectarBDconADO.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult Baja(int paramCOdigo)
+        public ActionResult Baja(int paramCodigo)
         {
+            
             ADMarticulo objadmart = new ADMarticulo();
-            objadmart.Borrar(paramCOdigo);
+            objadmart.Borrar(paramCodigo);
             return RedirectToAction("Index");
         }
 
@@ -58,7 +59,6 @@ namespace ConectarBDconADO.Controllers
 
 
         [HttpPost]
-
         public ActionResult Modificacion(FormCollection collection)
         {
             ADMarticulo objadmart = new ADMarticulo();
